@@ -1,39 +1,72 @@
 // Questões
 
-// 1
+// 1 -- Soma
 
-function soma(){
-    let a = new Array();
+function funcSoma(a){    
+    let soma = 0;
 
-    for (let i = 1; i < a.length; i++) {
-        const soma = a[i - 1] + a[i + 1];        
+    for (let i = 0; i < a.length; i++) {
+        soma += a[i];        
     }
+    return soma;
+}
+
+// 2 -- Média
+
+function funcMedia(med){    
     
+    let media = funcSoma(med) / med.length;
 
-
+    return media;   
 
 }
 
-// 2
+// 3 -- Menor Elemento
 
-// 3
+function funcMenor(menorE){
+    let nanico = menorE[0];
 
-// 4
+    for (let i = 0; i < menorE.length; i++) {
+        if (menorE[i] < nanico){
+            nanico = menorE[i];
+        }          
+    }
+    return nanico;
+}
 
-// 5
+// 4 -- Medalha de Prata
 
-// 6
+function funcPrata(segundo){
+    let maior = segundo[0];
+    let segundao = 0;
 
-// 7
+    for (let i = 0; i < segundo.length; i++) {
+        if(segundo[i] >= maior){
+            segundao = maior;
+            maior = segundo[i];
+        }    
+    }
+    return segundao;
+}
 
-// 8
+// 5 -- Filtro
 
-// 9
+function funcFiltro(imp) {
 
-// 10
+}
 
-// 11
+// 6 -- Inverso
 
-// 12
+// 7 -- Histograma
 
-// 13
+// 8 -- Verificador
+
+// 9 -- Comparador
+
+// 10 -- Removedor
+
+// 11 -- Palíndromo
+
+// 12 -- Intercalador
+
+// 13 -- Compactador
